@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loren-Ipsum</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
+
+<body>
+  <main class="main">
+    <picture class="main__picture">
+      <source srcset="img/bg-desktop@1x.webp 1x, img/bg-desktop@2x.webp 2x"
+        media="(min-width: 1280px)" type="image/webp" width="1280" height="832">
+      <source srcset="img/bg-mobile@1x.webp 1x, img/bg-mobile@2x.webp 2x" type="image/webp"
+        width="320" height="568">
+      <source srcset="img/bg-desktop@1x.png 1x, img/bg-desktop@2x.png 2x"
+        media="(min-width: 1280px)" type="image/png" width="1280" height="832">
+      <img src="img/bg-mobile@1x.png"
+        srcset="img/bg-mobile@2x.png 2x" width="320" height="568" alt="Фоновая картинка">
+    </picture>
+    <header class="header">
+      <svg class="header__logo" width="88" height="40">
+        <use href="../__spritemap#sprite-logo"></use>
+      </svg>
+      <div class="header__nav-wrapper">
+        <ul class="header__item">
+          <li class="header__list">Loren Ipsum</li>
+          <li class="header__list">Loren Ipsum</li>
+          <li class="header__list">Loren Ipsum</li>
+        </ul>
+        <a class="header__link" href="#">Loren Ipsum</a>
+      </div>
+      <button class="header__button" type="button">
+        <span class="header__button-text">Loren Ipsum</span>
+      </button>
+    </header>
+    <section class="hero">
+      <h1 class="hero__title">Loren Ipsum</h1>
+      <div class="hero__wrapper">
+        <div class="swiper" id="swiper-hero">
+          <ol class="hero__list swiper-wrapper">
+            <li class="hero__item swiper-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <span class="hero__number hero__number--one"></span>
+            </li>
+            <li class="hero__item swiper-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <span class="hero__number hero__number--two"></span>
+            </li>
+            <li class="hero__item swiper-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <span class="hero__number hero__number--three"></span>
+            </li>
+            <li class="hero__item swiper-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <span class="hero__number hero__number--four"></span>
+            </li>
+            <li class="hero__item swiper-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <span class="hero__number hero__number--five"></span>
+            </li>
+            <li class="hero__item swiper-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <span class="hero__number hero__number--six"></span>
+            </li>
+          </ol>
+          <div class="hero__button-wrapper">
+            <button class="hero__button hero__button-prev" type="button">
+              loren ipsum
+            </button>
+            <button class="hero__button hero__button-next" type="button">
+              loren ipsum
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

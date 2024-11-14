@@ -1,0 +1,25 @@
+.main {
+  width: $min-width-mobile;
+
+  &.active {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: $min-width-desktop;
+  }
+}
+
+.main__picture {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: $min-width-mobile;
+  height: 568px;
+  background: $bg;
+
+  @media (min-width: $min-width-desktop) {
+    width: $min-width-desktop;
+    height: 832px;
+  }
+}
